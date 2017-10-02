@@ -12,10 +12,16 @@ use Eventio\BBQ\Queue\QueueInterface;
 interface JobInterface
 {
 
+    /**
+     * @return JobPayloadInterface
+     */
     public function getPayload();
 
     public function setPayload(JobPayloadInterface $payload);
 
+    /**
+     * @return QueueInterface
+     */
     public function getQueue();
 
     public function setQueue(QueueInterface $queue);
