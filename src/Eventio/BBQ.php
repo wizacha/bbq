@@ -16,7 +16,7 @@ class BBQ
 {
 
     /**
-     * @var array
+     * @var QueueInterface[]
      */
     private $queueRegistry = array();
 
@@ -90,7 +90,7 @@ class BBQ
     }
 
     /**
-     * @return null
+     * @return null|JobInterface
      */
     public function fetchAnyJob()
     {
